@@ -6,6 +6,7 @@ public class Panlindrome {
 
 	public String solution(String str) {
 		String answer = "";
+		str = str.toUpperCase();
 		String[] word = str.split("");
 		int len = str.length()-1;
 		int count =0;
