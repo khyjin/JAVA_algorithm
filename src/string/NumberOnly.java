@@ -18,9 +18,6 @@ public class NumberOnly {
 		return answer;
 	}
 	
-	
-	
-	
 	public static void main(String[] args) {
 		NumberOnly test = new NumberOnly();
 		Scanner sc = new Scanner(System.in);
