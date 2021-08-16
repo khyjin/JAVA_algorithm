@@ -35,6 +35,7 @@ public class Panlindrome2 {
 		
 		return answer;
 	}
+	
 	public static void main(String[] args) {
 		Panlindrome2 test = new Panlindrome2();
 		Scanner sc = new Scanner(System.in);
@@ -42,5 +43,4 @@ public class Panlindrome2 {
 		System.out.println(test.solution(str));
 
 	}
-
 }
