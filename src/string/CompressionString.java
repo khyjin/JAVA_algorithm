@@ -1,33 +1,32 @@
 package string;
 
+import java.util.Scanner;
+
 public class CompressionString {
 
 	public void solution(String str) {
 		String answer = "";
-		String[] word = str.split("");
-		
-		for(int i=0;i<str.length();i++) {
-			int count = 0;
-
-			for(int j=0;j<str.length();j++) {
-				if(word[i].equals(word[j])) {
-					count++;
-				}
-			}
+		str = str+" ";
+		int count = 1;
+		for(int i=0;i<=str.length()-1;i++) {
 			
-			if(count>1) {
-				answer = answer+word[i]+count;
+			if(str.charAt(i)==str.charAt(i+1)) {
+				count++;				
 			} else {
-				answer = answer+word[i];
+				answer = answer+str.charAt(i);
+				if(count>1) String.valueOf(count);
+				count = 1;
 			}
 		}
+
 		
 		System.out.println(answer);
 	}
 	
 	public static void main(String[] args) {
 		CompressionString test = new CompressionString();
-		test.solution("KKHSSSSSSSE");
+		Scanner sc = new Scanner(System.in);
+		test.solution(sc.next());
 	}
 
 }
