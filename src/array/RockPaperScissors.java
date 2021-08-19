@@ -5,10 +5,28 @@ import java.util.Scanner;
 public class RockPaperScissors {
 
 	public void solution(int[] A, int[] B) {
+		char[] answer = new char[A.length];
+		
 		for(int i=0;i<A.length;i++) {
-			switch(A[i]) {
-			case 1:
-			}
+			if(A[i]==B[i]) {
+				answer[i] = 'D';
+			} else if(A[i]==1&&B[i]==2) {
+				answer[i] = 'B';
+			} else if(A[i]==1&&B[i]==3) {
+				answer[i] = 'A';
+			} else if(A[i]==2&&B[i]==1) {
+				answer[i] = 'A';
+			} else if(A[i]==2&&B[i]==3) {
+				answer[i] = 'B';
+			} else if(A[i]==3&&B[i]==1) {
+				answer[i] = 'B';
+			} else if(A[i]==3&&B[i]==2) {
+				answer[i] = 'A';
+			} 
+		}
+		
+		for(char x:answer) {
+			System.out.println(x);
 		}
 	}
 	
