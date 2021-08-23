@@ -8,6 +8,9 @@ public class PrimeNumber {
 		
 		for(int i=2;i<=num;i++) {
 			
+			for(int j=i;j<num;j++) {
+				
+			}
 		}
 	}
 	
