@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class Classleader {
 
-	public void solution(String[] arr) {
-		Map<String, Integer> vote = new HashMap<String, Integer>();
-
+	public void solution(int n, String[] arr) {
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		
 		
 	}
 	
@@ -21,7 +21,7 @@ public class Classleader {
 			arr[i] = sc.next();
 		}
 		
-		test.solution(arr);
+		test.solution(n,arr);
 	}
 
 }
