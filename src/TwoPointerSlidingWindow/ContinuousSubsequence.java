@@ -16,7 +16,7 @@ public class ContinuousSubsequence {
 //			}
 //		}
 //		
-//		System.out.println(answer);
+
 		
 	//lt~rt 사이의 합이 주어진 m과 같은가
 		int answer = 0, sum=0, lt=0;
