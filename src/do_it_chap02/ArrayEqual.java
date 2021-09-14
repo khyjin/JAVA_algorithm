@@ -3,8 +3,7 @@ package do_it_chap02;
 import java.util.Scanner;
 
 public class ArrayEqual {
-	//p62. 모든 요소의 값이 같은가
-	
+	//p62. 모든 요소의 값이 같은가	
 	static boolean equals(int[] arr1, int[] arr2) {
 		
 		if(arr1.length != arr2.length) {
