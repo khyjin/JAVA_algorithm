@@ -19,6 +19,29 @@ public class ArrayEqual {
 		return true;
 	}
 	
+	//p64 배열 b의 모든 요소를 배열 a에 복사하는 메서드
+	static void copy(int[] a, int[] b) {
+		for(int i=0;i<a.length;i++) {
+			b[i] = a[i];
+		}
+		
+		for(int x : b) {
+			System.out.println(x);
+		}
+	}
+	
+	//p64 역순으로 복사
+	static void rcopy(int[]a, int[] b) {
+		int len = a.length-1;
+		for(int i = len; i>=0; i--) {
+			b[len-i] = a[i];
+		}
+		
+		for(int x : b) {
+			System.out.println(x);
+		}
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int len1 = sc.nextInt();
@@ -36,6 +59,15 @@ public class ArrayEqual {
 		boolean result = equals(arr1, arr2);
 		
 		System.out.println("arr1과 arr2는 "+result);
+		
+		int[] a = {1,2,3,6,8,10};
+		int[] b = new int[a.length];
+		
+		copy(a,b);
+		
+		System.out.println("======================");
+		
+		rcopy(a,b);
 		
 	}
 
