@@ -42,6 +42,7 @@ public class ArrayEqual {
 		}
 	}
 	
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int len1 = sc.nextInt();
