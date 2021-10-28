@@ -12,6 +12,7 @@ public class CardConvRev {
 		
 		while(x>0) {
 			
+			
 		}
 		
 		return answer;
