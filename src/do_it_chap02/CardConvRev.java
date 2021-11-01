@@ -11,8 +11,8 @@ public class CardConvRev {
 		String answer = "";
 		
 		while(x>0) {
-			
-			
+			answer += x%r;
+			x/=r;
 		}
 		
 		return answer;
@@ -21,8 +21,8 @@ public class CardConvRev {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int x = sc.nextInt();
-		int r = sc.nextInt();
+		int x = sc.nextInt();	//10진수 숫자
+		int r = sc.nextInt();	//변환할 진수
 		
 		System.out.println("answer = "+cardConvR(x, r));
 	}
